@@ -295,32 +295,3 @@ $ python app.py review examples/bad_example.py
 ...
 ```
 
----
-
-## 11. 与评分标准的对应关系
-
-| 评分维度 | 项目实现 |
-|---|---|
-| 功能完整性 40% | 单文件/目录审查、AST 分析、问题发现、改进建议、CLI |
-| Agent 架构 30% | Agent Loop + Tool + LLM + Memory |
-| 代码质量 20% | 模块化、类型标注、错误处理、重试、单元测试 |
-| 文档 10% | README.md + Design.md + 使用示例 |
-
-课程 PPT 的评分标准中，功能完整性占 40%，Agent 架构占 30%，代码质量占 20%，文档占 10%。fileciteturn0file0L69-L77
-
----
-
-## 12. 后续可扩展方向
-
-如果需要进一步增加功能，可以加入：
-
-- Git diff 审查
-- Java / C++ AST
-- 自动生成 Patch
-- 单元测试生成
-- Web UI
-- 多 Agent 协作
-- 向量数据库长期记忆
-- 静态分析工具集成（ruff / pylint / mypy 等）
-
-当前版本优先保证课程要求的核心 Agent 能力完整。

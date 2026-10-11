@@ -111,7 +111,6 @@ LLM_BASE_URL=https://api.openai.com/v1
 LLM_MODEL=你的模型名称
 ```
 
-项目采用 OpenAI-compatible API，因此也可以将 `LLM_BASE_URL` 修改为课程允许使用的其他兼容服务。
 
 ## 6. 使用方法
 
@@ -269,14 +268,5 @@ LLM 调用失败时进行有限次数重试，并使用指数退避：
 
 不会无限重试。
 
-## 11. 演示建议
-
-1. 运行 `python app.py ast examples/bad_example.py`
-2. 展示 AST 工具发现的客观问题
-3. 运行 `python app.py review examples/bad_example.py`
-4. 展示 LLM 对问题的进一步解释
-5. 再进入 `python app.py chat`
-6. 追问“请重点解释异常处理问题”
-7. 展示上下文记忆效果
 
 
